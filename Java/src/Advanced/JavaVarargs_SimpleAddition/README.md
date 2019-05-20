@@ -6,4 +6,6 @@
 ## »ç¿ë¹ý
 ```
 void add(int ... args)
+	~~~
+	for(int n : args)
 ```
