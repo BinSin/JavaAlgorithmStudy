@@ -21,8 +21,7 @@ BigInteger.valueof(n).isProbablePrime(int certainty);
 
 ## range, noneMatch
 ```
-return n -> IntStream.range(2, (int) Math.sqrt(n+1))
-		 			  .noneMatch(i -> n%i == 0);
+return n -> IntStream.range(2, (int) Math.sqrt(n+1)).noneMatch(i -> n%i == 0);
 ```
 
 # StringBuilder
