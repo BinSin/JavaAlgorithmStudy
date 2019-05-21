@@ -8,6 +8,9 @@
 () -> expression body
 ```
 
+
+
+
 # BigInteger
 간단히 설명하면 소수가 확실히 아닌 경우에는 false를 return,
 
@@ -17,6 +20,7 @@
 BigInteger.valueof(n).isProbablePrime(int certainty);
 ```
 
+
 # IntStream
 
 ## range, noneMatch
@@ -24,10 +28,12 @@ BigInteger.valueof(n).isProbablePrime(int certainty);
 return n -> IntStream.range(2, (int) Math.sqrt(n+1)).noneMatch(i -> n%i == 0);
 ```
 
+
 # StringBuilder
 ```
 new StringBuilder(Integer.toString(n)).reverse().toString()
 ```
+
 
 # 이클립스 자동 줄맞춤
 ctrl + shift + f
