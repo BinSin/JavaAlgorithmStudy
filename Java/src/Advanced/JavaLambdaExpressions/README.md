@@ -9,8 +9,6 @@
 ```
 
 
-
-
 # BigInteger
 간단히 설명하면 소수가 확실히 아닌 경우에는 false를 return,
 
