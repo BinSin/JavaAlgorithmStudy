@@ -7,4 +7,10 @@
 3. 인터페이스의 맴버는 반드시 public이다.
 
 
+# git commit message change
+```
+git commit --amend
+```
+
+
 출처: https://opentutorials.org/module/2495/14142
