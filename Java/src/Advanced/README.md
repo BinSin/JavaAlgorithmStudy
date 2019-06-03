@@ -48,7 +48,7 @@ accessModifier methodName(datatype ... arg) {
 출처: https://jdm.kr/blog/216
 
 # Java Lambda Expressions
-�ĺ��� ���� ���� ������ �Լ� ǥ����
+메소드를 하나의 식으로 표현한 것으로 클래스를 작성하고 객체를 생성하지 않아도 메소드를 사용할 수 있다.
 
 ```
 ( parameters ) -> expression body
