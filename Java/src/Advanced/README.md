@@ -186,7 +186,7 @@ public class Singleton {
 출처: https://jdm.kr/blog/180
 
 
-# 비지터 패턴 (Visitor Pattern)
+# 방문자 패턴 (Visitor Pattern)
 알고리즘을 객체 구조에서 분리시키는 디자인 패턴
 
 ## 특징
