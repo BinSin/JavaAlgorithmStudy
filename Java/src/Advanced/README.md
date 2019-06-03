@@ -11,14 +11,14 @@ BufferedReader br = new BufferedReader(new InputStreamReader(in));
 # Java Varargs
 필요에 따라 매개변수(인수)를 가변적으로 조정할 수 있는 기술
 
-출처: https://gyrfalcon.tistory.com/entry/Java-Varargs
-
-## ������
+## 방법
 ```
-accessModifier methodName(datatype�� arg) {
-    // method body
+accessModifier methodName(datatype ... arg) {
+    for(datatype data : arg) { }
 }
 ```
+
+출처: https://gyrfalcon.tistory.com/entry/Java-Varargs
 
 
 # Java Annotations
