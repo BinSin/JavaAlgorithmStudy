@@ -9,9 +9,9 @@ BufferedReader br = new BufferedReader(new InputStreamReader(in));
 ```
 
 # Java Varargs
-�� �� 5.0���� �Ұ��Ǵ� ���� �߿��� �����μ�(Varargs)���� ���� �ִ�. �����μ����� ���� �ʿ信 ���� �Ű�����(�μ�)�� ���������� ������ �� �ִ� �����̴�. �����μ��� ���� �������� �����μ� ���� �÷����̳� �迭�� �̿��ؼ� �����μ��� ��ü�ϰ� �־���.
+필요에 따라 매개변수(인수)를 가변적으로 조정할 수 있는 기술
 
-��ó: https://gyrfalcon.tistory.com/entry/Java-Varargs [Minsub's Blog]
+출처: https://gyrfalcon.tistory.com/entry/Java-Varargs
 
 ## ������
 ```
@@ -58,56 +58,44 @@ accessModifier methodName(datatype�� arg) {
 ```
 
 
-# BigInteger
-������ �����ϸ� �Ҽ��� Ȯ���� �ƴ� ���쿡�� false�� return,
-
-�Ҽ��� ���� Ȯ���� 1-(1/2)^certainty �̻��� ���� true�� return �Ѵ�.
+# BigInteger를 사용하여 소수인지 아닌지 판별하기
+certainty 변수가 높을수록 더 정확해진다.
 
 ```
 BigInteger.valueof(n).isProbablePrime(int certainty);
 ```
 
 
-# IntStream
+# IntStream를 사용하여 소수인지 아닌지 판별하기
 
-## range, noneMatch
 ```
 return n -> IntStream.range(2, (int) Math.sqrt(n+1)).noneMatch(i -> n%i == 0);
 ```
 
 
-# StringBuilder
+# StringBuilder를 사용하여 문자열 거꾸로 바꾸기
+
 ```
 new StringBuilder(Integer.toString(n)).reverse().toString()
 ```
 
 
-# ��Ŭ���� �ڵ� �ٸ���
+# Eclipse 자동 정렬
 ctrl + shift + f
 
 
 # Java Reflection
-Ŭ����, �������̽�, �ʵ� �� �޼ҵ��� ��Ÿ�� Ư���� �˻� �Ǵ�/�Ǵ� ������ �� �ִ�.
+리플렉션이란 객체를 통해 클래스의 정보를 분석해 내는 프로그램 기법을 말한다.
 
-�츮�� ������ �ð��� �׵��� �̸��� ���� �� Ư�� �����ϴ�.
+스프링을 공부하다가 보면 BeanFactory 라는 Spring Container 개념을 학습하게 된다.
 
-���� �츮�� reflection�� �̿��Ͽ� ���ο� ��ü�� �ν��Ͻ�ȭ�ϰ�, ������ ȣ���ϸ�, �ʵ� ���� ���ų� ������ �� �ִ�.
+이 BeanFactory는 어플리케이션이 실행한 후 객체가 호출 될 당시 객체의 인스턴스를 생성하게 되는데, 그 때 필요한 기술이 Reflection이다.
 
-��ó: https://www.baeldung.com/java-reflection
+자바는 스크립트 언어가 아닌 컴파일 언어이다. 물론 .java -> .class -> 실행이라는 2단계의 메커니즘을 가지고 있지만 컴파일 언어로 분리하는 게 옳다. 원래 자바에서는 동적으로 객체를 생성하는 기술이 없었다. 그리고 동적으로 인스턴스를 생성하는 Reflection으로 그 역활을 대신하게 된다.
 
-## ������
-```
-Class student = Student.class; // Class�� public field ����
 
-// public���� ������ �޼ҵ� ��������
-Method[] methods = student.getDeclaredMethods();
+출처: https://gyrfalcon.tistory.com/entry/Java-Reflection
 
-ArrayList<String> methodList = new ArrayList<>();
-
-for(Method method : methods){
-    methodList.add(method.getName()); // �޼ҵ� �̸��� ����
-}
-```
 
 
 # Private Class에 접근하기
@@ -126,12 +114,12 @@ System.out.println(num + " is " + ((Solution.Inner.Private)o).powerof2(num));
 ```
 
 
-# �̱�ư ����(Singleton Pattern)
+# 싱글턴 패턴 (Singleton Pattern)
 
-## ����
-�� �ϳ��� ������ ��ü�� ������ ���� ������ ����
+## 개념
+단 하나의 유일한 객체를 만들기 위한 디자인 패턴
 
-## ����
+## 구현
 
 ```
 public class Singleton {
@@ -148,21 +136,21 @@ public class Singleton {
 }
 ```
 
-## ������
-��Ƽ �������� ���� �� ������ ������.
+## 문제점
+멀티 스레드 문제점으로 인해 이 싱글턴 클래스는 자기멋대로 객체가 두개 이상이 되는 경우 생기게 된다.
 
-## �ذ� ����
+## 해결 방법
 
 - add synchronized
 
 ```
 public static synchronized Singleton getInstance()
 ```
-������ synchronized�� �����ս��� ������ ������ ��û�� ������ �ش�.
+하지만 synchronized 는 퍼포먼스에 안좋은 영향을 준다.
 
 - eager initialization
 
-��ü�� ���α׷� ���۰� ���ÿ� �ʱ�ȭ
+객체를 프로그램 시작과 동시에 초기화
 
 ```
 public class Singleton {
@@ -176,7 +164,7 @@ public class Singleton {
 }
 ```
 
-��ó: https://jdm.kr/blog/10
+출처: https://jdm.kr/blog/10
 
 
 # 팩토리 메소드 패턴(Factory Method Pattern)
@@ -198,15 +186,15 @@ public class Singleton {
 출처: https://jdm.kr/blog/180
 
 
-# ������ ����(Visitor Pattern)
-�˰������� ��ü �������� �и���Ű�� ������ �����̴�. �̷��� �и��� �ϸ� ������ �������� �ʰ��� ���������� ���ο� ������ ������ ��ü ������ �߰��� �� �ְ� �ȴ�. ����-���� ��Ģ�� �����ϴ� ������ �ϳ��̴�.
+# 비지터 패턴 (Visitor Pattern)
+알고리즘을 객체 구조에서 분리시키는 디자인 패턴
 
-## ȿ��
-- ó���� ������ �������� �и�
-- �������� �������� ������
-- Composite Pattern�� ����
+## 특징
+- 처리를 데이터 구조에서 분리
+- 데이터의 독립성을 높여준다
+- Composite Pattern 과 유사
 
-��ó : https://blog.hansoolabs.com/564
+출처 : https://blog.hansoolabs.com/564
 
 # Set vs List
 List is an ordered sequence of elements whereas Set is a distinct list of elements which is unordered
@@ -219,4 +207,4 @@ List is an ordered sequence of elements whereas Set is a distinct list of elemen
 | Order | ORDERED | DEPENDS ON IMPLEMENTATION |
 | Positional Access | YES | NO |
 
-��ó : http://net-informations.com/java/cjava/list.htm
+출처 : http://net-informations.com/java/cjava/list.htm
