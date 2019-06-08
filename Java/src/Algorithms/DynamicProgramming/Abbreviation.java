@@ -24,10 +24,11 @@ public class Abbreviation {
 					bIndex++;
 					
 /*
+이 케이스에 대해 다시 생각해보자
 1
 bcBCASD
 BCASD
-NO 
+YES 되야 한다.
 */
 					for (int i = aIndex + 1; i < a.length(); i++) {
 						if (aArr[i] >= 'a' && aArr[i] <= 'z') {
