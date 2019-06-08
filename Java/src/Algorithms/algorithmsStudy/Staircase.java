@@ -2,7 +2,7 @@
  * Author : Binsin
  * https://www.hackerrank.com/challenges/staircase
  */
-package algorithmsStudy;
+package Algorithms.algorithmsStudy;
 
 import java.io.*;
 

@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/sam-and-substrings/leaderboard
  */
 
-package algorithmsStudy4;
+package Algorithms.algorithmsStudy4;
 
 import java.io.BufferedReader;
 import java.io.IOException;

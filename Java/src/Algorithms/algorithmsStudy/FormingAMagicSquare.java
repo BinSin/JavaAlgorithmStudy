@@ -3,15 +3,15 @@
  * https://www.hackerrank.com/challenges/magic-square-forming
  */
 
-package algorithmsStudy;
+package Algorithms.algorithmsStudy;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 // n * n Magic Square
-// °ªÀº 1 ~ n^2 ±îÁö
-// °¢ Çà, ¿­ÀÇ ÇÕ = n(n^2 + 1) / 2
+// ï¿½ï¿½ï¿½ï¿½ 1 ~ n^2 ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ = n(n^2 + 1) / 2
 public class FormingAMagicSquare {
 
 	public static int costValue(int[][] compare, int[][] magic) {

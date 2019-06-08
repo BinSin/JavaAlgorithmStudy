@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package Algorithms.DynamicProgramming;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/migratory-birds
  */
 
-package algorithmsStudy;
+package Algorithms.algorithmsStudy;
 
 import java.io.BufferedReader;
 import java.io.IOException;

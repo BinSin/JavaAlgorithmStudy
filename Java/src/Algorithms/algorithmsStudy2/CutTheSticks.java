@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/cut-the-sticks
  */
 
-package algorithmsStudy2;
+package Algorithms.algorithmsStudy2;
 
 import java.io.BufferedReader;
 import java.io.IOException;

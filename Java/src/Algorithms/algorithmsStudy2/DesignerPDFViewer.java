@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/designer-pdf-viewer?h_r=next-challenge&h_v=zen
  */
 
-package algorithmsStudy2;
+package Algorithms.algorithmsStudy2;
 
 import java.io.BufferedReader;
 import java.io.IOException;

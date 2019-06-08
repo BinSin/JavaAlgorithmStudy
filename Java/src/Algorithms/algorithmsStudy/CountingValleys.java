@@ -2,7 +2,7 @@
  * Author : BinSin
  * https://www.hackerrank.com/challenges/counting-valleys
  */
-package algorithmsStudy;
+package Algorithms.algorithmsStudy;
 
 import java.io.BufferedReader;
 import java.io.IOException;

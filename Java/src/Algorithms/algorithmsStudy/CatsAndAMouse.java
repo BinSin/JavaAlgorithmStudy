@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/cats-and-a-mouse/problem
  */
 
-package algorithmsStudy;
+package Algorithms.algorithmsStudy;
 
 import java.io.*;
 import java.util.*;

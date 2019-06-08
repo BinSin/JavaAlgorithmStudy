@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/apple-and-orange?h_r=next-challenge&h_v=zen
  */
 
-package algorithmsStudy;
+package Algorithms.algorithmsStudy;
 
 import java.io.BufferedReader;
 import java.io.IOException;

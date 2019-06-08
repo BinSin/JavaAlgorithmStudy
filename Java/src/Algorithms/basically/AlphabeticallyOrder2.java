@@ -1,4 +1,4 @@
-package basically;
+package Algorithms.basically;
 
 import java.io.*;
 import java.util.*;
@@ -23,13 +23,13 @@ public class AlphabeticallyOrder2 {
 		Pattern p = Pattern.compile(".*@gmail.com");
 		
 		for(Email e : emailList) {
-			// compileÀÇ ³»¿ëÀÌ ¸Â´ÂÁö °Ë»ç
+			// compileï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Â´ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½
 			if(p.matcher(e.email).matches()) {
-				// List¿¡ Ãß°¡
+				// Listï¿½ï¿½ ï¿½ß°ï¿½
 				names.add(e.name);
 			}
 		}
-		// ¿À¸§Â÷¼ø
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Collections.sort(names);
 		return names;
 		

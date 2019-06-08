@@ -1,4 +1,4 @@
-package algorithmsStudy;
+package Algorithms.algorithmsStudy;
 
 import java.io.*;
 

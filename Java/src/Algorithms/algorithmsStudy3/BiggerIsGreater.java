@@ -4,7 +4,7 @@
  * Time Out TT..
  */
 
-package algorithmsStudy3;
+package Algorithms.algorithmsStudy3;
 
 import java.io.BufferedReader;
 import java.io.IOException;

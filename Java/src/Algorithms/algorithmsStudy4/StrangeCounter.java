@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/strange-code
  */
 
-package algorithmsStudy4;
+package Algorithms.algorithmsStudy4;
 
 import java.io.BufferedReader;
 import java.io.IOException;

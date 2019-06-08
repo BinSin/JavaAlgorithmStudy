@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/append-and-delete
  */
 
-package algorithmsStudy2;
+package Algorithms.algorithmsStudy2;
 
 import java.io.BufferedReader;
 import java.io.IOException;

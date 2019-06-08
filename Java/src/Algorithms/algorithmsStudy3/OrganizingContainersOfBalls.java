@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/organizing-containers-of-balls
  */
 
-package algorithmsStudy3;
+package Algorithms.algorithmsStudy3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,8 +14,8 @@ import java.util.Arrays;
 public class OrganizingContainersOfBalls {
 
 	public static void swapTwoBalls(int[] c, int[] t, int q) {
-		// Arrays.sort : ¹è¿­ Á¤·Ä
-		// Array.equals : ¹è¿­ ºñ±³
+		// Arrays.sort : ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½
+		// Array.equals : ï¿½è¿­ ï¿½ï¿½
 		Arrays.sort(c);
 		Arrays.sort(t);
 		if(Arrays.equals(c, t)) {

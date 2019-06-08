@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/matrix-rotation-algo/problem?h_r=next-challenge&h_v=zen
  */
 
-package algorithmsStudy4;
+package Algorithms.algorithmsStudy4;
 
 import java.io.BufferedReader;
 import java.io.IOException;

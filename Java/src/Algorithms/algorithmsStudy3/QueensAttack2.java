@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/queens-attack-2?h_r=next-challenge&h_v=zen
  */
 
-package algorithmsStudy3;
+package Algorithms.algorithmsStudy3;
 
 import java.io.BufferedReader;
 import java.io.IOException;

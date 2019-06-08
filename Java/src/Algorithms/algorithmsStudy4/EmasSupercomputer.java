@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/two-pluses/problem
  */
 
-package algorithmsStudy4;
+package Algorithms.algorithmsStudy4;
 
 import java.util.List;
 import java.util.Scanner;

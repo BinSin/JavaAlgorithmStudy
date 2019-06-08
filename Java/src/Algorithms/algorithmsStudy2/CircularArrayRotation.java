@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/circular-array-rotation
  */
 
-package algorithmsStudy2;
+package Algorithms.algorithmsStudy2;
 
 import java.io.BufferedReader;
 import java.io.IOException;

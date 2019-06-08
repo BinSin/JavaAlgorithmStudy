@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/domains/algorithms/implementation?filters=status%3Aunsolved
  */
 
-package algorithmsStudy3;
+package Algorithms.algorithmsStudy3;
 
 import java.io.BufferedReader;
 import java.io.IOException;

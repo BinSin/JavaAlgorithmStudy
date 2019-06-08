@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/acm-icpc-team
  */
 
-package algorithmsStudy3;
+package Algorithms.algorithmsStudy3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -36,8 +36,8 @@ public class ACMICPCTeam {
 	
 	
 	public static void main(String[] args) throws IOException {
-		// Scanner ¿¡´Â nextBigInteger¶ó´Â ¸Þ¼­µå°¡ ÀÖ´Ù
-		// Scanner ¿¡¼­ 2Áø¼ö´Â nextBigInteger(2)·Î Ç¥½Ã
+		// Scanner ï¿½ï¿½ï¿½ï¿½ nextBigIntegerï¿½ï¿½ï¿½ ï¿½Þ¼ï¿½ï¿½å°¡ ï¿½Ö´ï¿½
+		// Scanner ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ nextBigInteger(2)ï¿½ï¿½ Ç¥ï¿½ï¿½
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String str = br.readLine();
 		String[] s = str.split("\\s+");
@@ -47,7 +47,7 @@ public class ACMICPCTeam {
 		BigInteger[] teamKnow = new BigInteger[personNum];
 		for(int i=0; i<personNum; i++) {
 			String topic = br.readLine();
-			// µÚ¿¡ 2¸¦ ºÙÀÌ¸é 2Áø¼ö·Î Ãë±ÞÇÑ´Ù.
+			// ï¿½Ú¿ï¿½ 2ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
 			teamKnow[i] = new BigInteger(topic, 2);
 		}
 		maxNumberOfTopicAndCount(teamKnow, personNum, topicNum);

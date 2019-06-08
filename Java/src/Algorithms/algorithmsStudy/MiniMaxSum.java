@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/mini-max-sum?h_r=next-challenge&h_v=zen
  */
 
-package algorithmsStudy;
+package Algorithms.algorithmsStudy;
 
 import java.io.*;
 import java.util.Scanner;

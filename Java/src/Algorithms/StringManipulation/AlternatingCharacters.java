@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/alternating-characters/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
  */
 
-package StringManipulation;
+package Algorithms.StringManipulation;
 
 import java.io.BufferedReader;
 import java.io.IOException;

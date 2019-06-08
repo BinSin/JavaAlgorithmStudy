@@ -1,4 +1,4 @@
-package basically;
+package Algorithms.basically;
 
 import java.util.*;
 

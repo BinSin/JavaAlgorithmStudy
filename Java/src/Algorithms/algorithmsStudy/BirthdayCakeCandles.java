@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/birthday-cake-candles?h_r=next-challenge&h_v=zen
  */
 
-package algorithmsStudy;
+package Algorithms.algorithmsStudy;
 
 import java.util.Scanner;
 

@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/count-triplets-1/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps
  */
 
-package DictionariesAndHashmaps;
+package Algorithms.DictionariesAndHashmaps;
 
 import java.io.BufferedReader;
 import java.io.IOException;

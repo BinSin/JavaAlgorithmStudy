@@ -3,7 +3,7 @@
  * https://www.hackerrank.com/challenges/breaking-best-and-worst-records
  */
 
-package algorithmsStudy;
+package Algorithms.algorithmsStudy;
 
 import java.io.BufferedReader;
 import java.io.IOException;
