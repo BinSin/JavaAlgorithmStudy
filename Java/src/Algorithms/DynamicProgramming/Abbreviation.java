@@ -12,43 +12,49 @@ public class Abbreviation {
 		char[] aArr = a.toCharArray();
 		char[] bArr = b.toCharArray();
 
-		int bIndex = 0;
-		for (int aIndex = 0; aIndex < a.length(); aIndex++) {
+		int aIndex = 0, bIndex = 0;
+		for (aIndex = 0; aIndex < a.length() && bIndex < b.length();) {
 			if (aArr[aIndex] >= 'a' && aArr[aIndex] <= 'z') {
 				if (bIndex >= b.length()) {
+					aIndex++;
 					continue;
 				}
-
-				aArr[aIndex] -= 32;
-				if (aArr[aIndex] == bArr[bIndex]) {
-					bIndex++;
-					
-/*
-이 케이스에 대해 다시 생각해보자
-1
-bcBCASD
-BCASD
-YES 되야 한다.
-*/
-					for (int i = aIndex + 1; i < a.length(); i++) {
-						if (aArr[i] >= 'a' && aArr[i] <= 'z') {
-							if(aArr[aIndex] == aArr[i]) {
-								aArr[i] += 32;
-								break;
-							}
-							else
-								continue;
-						}
-						else
-							break;
-					}
+				
+				int aLocation = aIndex + 1;
+				int bLocation = bIndex;
+				
+				for (int i = aLocation; i < a.length(); i++) {
+					if (aArr[i] >= 'a' && aArr[i] <= 'z') {
+						aLocation++;
+					} else
+						break;
 				}
+
+				for (int i = bLocation; i < b.length(); i++) {
+					if (bArr[i] != aArr[aLocation]) {
+						bLocation++;
+					} else
+						break;
+				}
+				
+				// daBcd
+				// ABC
+				
+				// daB
+				// AB
+				// 이렇게
+				
+				
+				aIndex = aLocation + 1;
+				bIndex = bLocation + 1;
+
 			} else {
 				if (bIndex >= b.length()) {
 					return "NO";
 				}
 
 				if (aArr[aIndex] == bArr[bIndex]) {
+					aIndex++;
 					bIndex++;
 				} else {
 					return "NO";
