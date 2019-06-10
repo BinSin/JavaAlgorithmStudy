@@ -14,37 +14,57 @@ public class Abbreviation {
 
 		int aIndex = 0, bIndex = 0;
 		for (aIndex = 0; aIndex < a.length() && bIndex < b.length();) {
+			if (bIndex == b.length()) {
+				break;
+			}
+			
 			if (aArr[aIndex] >= 'a' && aArr[aIndex] <= 'z') {
 				if (bIndex >= b.length()) {
 					aIndex++;
 					continue;
 				}
-				
-				int aLocation = aIndex + 1;
+
+				int aLocation = aIndex;
 				int bLocation = bIndex;
-				
+
 				for (int i = aLocation; i < a.length(); i++) {
 					if (aArr[i] >= 'a' && aArr[i] <= 'z') {
 						aLocation++;
 					} else
 						break;
 				}
-
-				for (int i = bLocation; i < b.length(); i++) {
-					if (bArr[i] != aArr[aLocation]) {
+				
+				if(aLocation != a.length()) {
+					for (int i = bLocation; i < b.length(); i++) {
+						if (bArr[i] == aArr[aLocation]) {
+							break;
+						}
 						bLocation++;
-					} else
+					}
+				}
+				else {
+					aLocation = a.length() - 1;
+					bLocation = b.length() - 1;
+				}
+				
+				int count = 0;
+				for (int i = aIndex, j = bIndex; i <= aLocation && j <= bLocation; i++) {
+					if (aArr[i] >= 'a' && aArr[i] <= 'z') {
+						aArr[i] -= 32;
+					}
+					
+					if(aArr[i] == bArr[j]) {
+						j++;
+						count++;
+					}
+					
+					if(count == bLocation - bIndex + 1)
 						break;
 				}
 				
-				// daBcd
-				// ABC
-				
-				// daB
-				// AB
-				// 이렇게
-				
-				
+				if(count != bLocation - bIndex + 1)
+					return "NO";
+
 				aIndex = aLocation + 1;
 				bIndex = bLocation + 1;
 
@@ -63,7 +83,15 @@ public class Abbreviation {
 		}
 
 		if (bIndex == b.length()) {
-			return "YES";
+			if(aIndex != a.length()) {
+				for(int i=aIndex; i<a.length(); i++) {
+					if(aArr[i] >= 'A' && aArr[i] <= 'Z')
+						return "NO";
+				}
+				return "YES";
+			} else {
+				return "YES";
+			}
 		} else {
 			return "NO";
 		}
